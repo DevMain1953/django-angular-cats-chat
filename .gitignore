@@ -6,6 +6,9 @@
 /back-end/api/cats/__pycache__/*
 /back-end/api/cats/migrations/__pycache__/*
 
+# Database
+/back-end/api/db.sqlite3
+
 ## Ignored files for front-end
 # Node
 /front-end/node_modules
