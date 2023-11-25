@@ -1,0 +1,36 @@
+<!-- cat-list.component.html -->
+<div *ngIf="cats.length > 0; else noCats">
+  <h2>Список котов</h2>
+  <ul>
+    <li *ngFor="let cat of cats">
+      Имя - {{ cat.name }}; Возраст - {{ cat.age }}; Порода - {{ cat.breed }}; Заводчик - {{cat.owner}}.
+      <a routerLink="/cats/{{cat.id}}">Детали</a>
+    </li>
+  </ul>
+</div>
+
+<ng-template #noCats>
+  <p>Список пуст</p>
+</ng-template>
+
+<div *ngIf="authToken === null; else loggedIn">
+  <p>
+    <a routerLink="/register">Регистрация</a>
+  </p>
+  <p>
+    <a routerLink="/login">Авторизация</a>
+  </p>
+</div>
+
+<ng-template #loggedIn>
+  <p>
+    <a routerLink="/cat/add">Добавить кота</a>
+  </p>
+  <p>
+    <a routerLink="/logout">Выход</a>
+  </p>
+</ng-template>
+
+<div>
+  <button (click)="goToChat()">Чат</button>
+</div>

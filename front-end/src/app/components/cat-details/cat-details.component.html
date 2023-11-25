@@ -1,0 +1,19 @@
+<div>
+    <label for="name">Имя:</label>
+    <input type="text" id="name" [(ngModel)]="cat.name" />
+  
+    <label for="age">Возраст:</label>
+    <input type="number" id="age" [(ngModel)]="cat.age" />
+
+    <label for="breed">Порода:</label>
+    <input type="text" id="breed" [(ngModel)]="cat.breed" />
+  
+    <label for="wool_type">Тип шерсти:</label>
+    <select id="wool_type" [(ngModel)]="cat.wool_type">
+        <option *ngFor="let woolType of woolTypes" [ngValue]="woolType.id">{{woolType.name}}</option>
+    </select>
+    <p>
+        <button (click)="updateCat()">Изменить кота</button>
+        <button (click)="deleteCat()">Удалить кота</button>
+    </p>
+  </div>

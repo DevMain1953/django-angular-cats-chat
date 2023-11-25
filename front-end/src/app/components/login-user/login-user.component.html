@@ -1,0 +1,11 @@
+<div>
+    <label for="username">Никнейм:</label>
+    <input type="text" id="username" [(ngModel)]="user.username" />
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" [(ngModel)]="user.password" />
+
+    <p>
+        <button (click)="loginUser()">Авторизоваться</button>
+    </p>
+  </div>

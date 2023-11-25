@@ -1,0 +1,17 @@
+## Ignored files for back-end
+# PyCache in project directory
+/back-end/api/api/__pycache__/*
+
+# PyCache in application directory
+/back-end/api/cats/__pycache__/*
+/back-end/api/cats/migrations/__pycache__/*
+
+## Ignored files for front-end
+# Node
+/front-end/node_modules
+
+# Visual Studio Code
+/front-end/.vscode/*
+
+# Miscellaneous
+/front-end/.angular/cache

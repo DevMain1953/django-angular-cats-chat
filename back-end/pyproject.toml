@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "python-test-task"
+version = "0.1.0"
+description = ""
+authors = ["DevMain1953 <alexanderbrenenburgh@gmail.com>"]
+readme = "README.md"
+packages = [{include = "python_test_task"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.2.7"
+djangorestframework = "^3.14.0"
+django-cors-headers = "^4.3.1"
+channels = "^4.0.0"
+daphne = "^4.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
