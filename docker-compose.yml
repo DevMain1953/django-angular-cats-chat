@@ -19,10 +19,12 @@ services:
     image: django-image
     volumes:
       - backend_code:/api
-    command: daphne -p 8001 api.asgi:application
+    command: daphne -p 8001 -b 0.0.0.0 api.asgi:application
     container_name: daphne
     depends_on:
       - django
+    ports:
+      - "8001:8001"
 
   # Front-end
   angular:
