@@ -39,9 +39,6 @@ class RegisterUserView(generics.CreateAPIView):
 
 
 class CustomObtainAuthToken(ObtainAuthToken):
-    """
-    Performs login and returns token
-    """
     permission_classes = [IsAnonymous]
     
     def post(self, request, *args, **kwargs):

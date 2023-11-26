@@ -31,9 +31,7 @@ export class ChatService {
   connect(): Observable<any> {
     return this.socket$.asObservable().pipe(
       filter((event: any) => event.type === 'chat.message'),
-      tap((event: any) => {
-        console.log('Received message:', event);
-      })
+      tap((event: any) => {})
     );
   }
 

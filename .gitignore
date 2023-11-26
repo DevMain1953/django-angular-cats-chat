@@ -1,10 +1,6 @@
 ## Ignored files for back-end
-# PyCache in project directory
-/back-end/api/api/__pycache__/*
-
-# PyCache in application directory
-/back-end/api/cats/__pycache__/*
-/back-end/api/cats/migrations/__pycache__/*
+# PyCache
+__pycache__/
 
 # Database
 /back-end/api/db.sqlite3
