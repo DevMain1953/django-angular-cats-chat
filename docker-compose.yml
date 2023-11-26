@@ -26,7 +26,7 @@ services:
       context: ./front-end
       dockerfile: ./Dockerfile
     image: angular-image
-    command: ng serve -p 8080 --host 0.0.0.0
+    command: ng serve --port 8080 --host 0.0.0.0
     container_name: angular
     depends_on:
       - django
