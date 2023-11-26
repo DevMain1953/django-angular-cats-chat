@@ -1,6 +1,6 @@
 # Overview
 
-Development version of a small service with two tables in the database for cats and messages. The frontend is implemented in Angular, the backend in Django and Django REST. Added authorization, registration and logout functionality. There is a differentiation of access rights and a chat with the ability to send anonymous messages. Messages are sent via Websockets (channels, daphne).
+Development version of a small service that can be started locally and also in Docker with two tables in the database for cats and messages. The frontend is implemented in Angular, the backend in Django and Django REST. Added authorization, registration and logout functionality. There is a differentiation of access rights and a chat with the ability to send anonymous messages. Messages are sent via Websockets (channels, daphne).
 
 # Installation
 
